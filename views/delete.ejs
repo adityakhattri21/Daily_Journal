@@ -1,0 +1,20 @@
+<%- include('partials/header') -%>
+<div class="compose">
+<h2>List of Blogs</h2>
+<% newPost.forEach(function(post){%>
+   <h3><%=post.title%></h3>
+    <%})%>
+    <form class="" action="/delete" method="post">
+      <label>Enter Title to Delete</label>
+      <input type="text" name="deletePost" value="">
+      <button type="submit" name="button" class="btn btn-primary">Delete</button>
+
+    </form>
+</div>
+
+
+
+
+
+
+<%- include('partials/footer')-%>
