@@ -1,7 +1,7 @@
 # Daily_Journal
 
 A simple webapp that can be used to compose daily blogs and store them in database. Technologies used are HTML, CSS , Node , Express, EJS , MongoDb.
-To use this webapp locally first clone the repo in your local disk.MAke sure you have Node installed
+To use this webapp locally first clone the repo in your local disk.Make sure you have Node installed
 Then run the following command:
 $ npm install
 This will install the required npm packages.
