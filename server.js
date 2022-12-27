@@ -4,7 +4,8 @@ const mongoose = require("mongoose");
 
 const app = express();
 
-mongoose.connect("mongodb://localhost:27017/blogDB");
+// mongoose.connect("mongodb://127.0.0.1:27017/blogDB");
+mongoose.connect("mongodb+srv://aditya:aditya112233@atlascluster.urim7w3.mongodb.net/?retryWrites=true&w=majority")
 
 const PostSchema = new mongoose.Schema({
   title: String,
@@ -79,7 +80,8 @@ app.post("/compose" , (req,res)=>{
 
 app.post("/delete" ,(req,res)=>{
   const delTitle = req.body.deletePost
-  Post.findOneAndDelete({title: delTitle} , (err)=>{
+  console.log(delTitle);
+  Post.findOneAndRemove({title: delTitle} , (err)=>{
     if(!err)
     res.redirect("/")
   })
