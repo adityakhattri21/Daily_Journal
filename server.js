@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 const app = express();
 
 // mongoose.connect("mongodb://127.0.0.1:27017/blogDB");
-mongoose.connect("mongodb+srv://aditya:aditya112233@atlascluster.urim7w3.mongodb.net/?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://Aditya:Aditya123@hackathon.mgpjffb.mongodb.net/?retryWrites=true&w=majority")
 
 const PostSchema = new mongoose.Schema({
   title: String,
